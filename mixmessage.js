@@ -28,5 +28,3 @@ const printRandomMessage = () => {
     alert(toPrint.message + "\n" + toPrint.author);
 }
 
-var button = document.getElementById("my-button");
-button.addEventListener("click", printRandomMessage);
