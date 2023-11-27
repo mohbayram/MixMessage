@@ -23,3 +23,10 @@ const selectRandomMessage = (arr) => {
     return message
 }
 
+const printRandomMessage = () => {
+    const toPrint = selectRandomMessage(messages)
+    alert(toPrint.message + "\n" + toPrint.author);
+}
+
+var button = document.getElementById("my-button");
+button.addEventListener("click", printRandomMessage);
