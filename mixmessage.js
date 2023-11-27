@@ -18,4 +18,8 @@ const messages =
                 message:"It took me quite a long time to develop a voice, and now that I have it, I am not going to be silent."}
             ]
 
-console.log(messages[0].author)
+const selectRandomMessage = (arr) => {
+    message = arr[Math.floor(Math.random()*arr.length)]
+    return message
+}
+
